@@ -1,0 +1,19 @@
+<div #dataTable class="video-list">
+  <div
+    class="video-container"
+    *ngFor="let video of videos; let i = index"
+    [class.hover]="mouseOvered[i]"
+    (mouseout)="mouseOvered[i] = false"
+    (mouseover)="mouseOvered[i] = true"
+  >
+    <div class="video-cell video-index">
+      <div class="video-cell-inner">{{i + 1}}</div>
+    </div>
+    <div class="video-cell video-title">
+      <div class="video-cell-inner"><a routerLink="/read/{{video.uid}}">{{video.title}}</a></div>
+    </div>
+    <div class="video-cell video-intro">
+      <div class="video-cell-inner">{{video.intro}}</div>
+    </div>
+  </div>
+</div>
