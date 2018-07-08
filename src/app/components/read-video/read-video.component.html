@@ -1,0 +1,20 @@
+<div class="video-card">
+  <app-player
+    [video]="activeVideo"
+    width="400"
+    height="225"
+    [triggers]="triggers"
+  ></app-player>
+  <div class="video-data">
+    <div class="video-title"><h3>{{activeVideo.title}}</h3></div>
+    <div class="video-description">{{activeVideo.description}}</div>
+    <div class="video-meta">
+      <div class="viewed">
+        <i class="fa fa-eye"></i> {{activeVideo.viewed}}
+      </div>
+      <div class="liked">
+        <i class="fa fa-thumbs-up"></i> {{activeVideo.liked}}
+      </div>
+    </div>
+  </div>
+</div>
