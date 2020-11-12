@@ -30,7 +30,7 @@
     "hammerjs": "^2.0.8",
     "rxjs": "^6.2.1",
     "screenfull": "^3.3.2",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.11.2"
   },
   "devDependencies": {
     "@angular/cli": "6.0.8",
